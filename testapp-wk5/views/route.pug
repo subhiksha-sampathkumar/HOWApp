@@ -1,0 +1,19 @@
+extends layout 
+
+
+block main-content 
+  div.content
+    //You can overwrite the main-content block by writing block content
+    //in the template file which is extending.
+    div.right   
+          img(src='./how_longimg.jpg' alt='logo' style='width:290px; height:580px;')      
+          
+    h1.page-title Distance between the given points  
+      nav#main-nav
+        ul
+          each driver in menu
+            li
+              a #{driver.driverId} #{driver.driverName} #{driver.CarModel} #{driver.location} #{driver.rating}
+    a(href='/routeInfo') Click here to list available rides between#{fp} to #{tp}
+  footer#footer 
+    p &copy; Copyright HawkOnWheels, 2023.

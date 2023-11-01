@@ -1,0 +1,38 @@
+extends layout 
+
+
+block main-content 
+  div.content
+    //You can overwrite the main-content block by writing block content
+    //in the template file which is extending.
+    div.right   
+          img(src='./Save_fuel_long.jpg' alt='logo' style='width:290px; height:580px;')      
+    br      
+    h1.page-title Available rides  
+    br
+    table#tbl
+      thead
+        tr
+          th From
+          th To
+          th Cost
+          th Click to Book 
+          th Click to Remove 
+      tbody
+        each ride in menu
+          tr
+            td #{ride.from}
+            td #{ride.to}
+            td #{ride.cost}     
+            td  
+              form(action="aboutRide")
+                  input(type="hidden", name="rideId", value=ride._id) 
+                  button.bkRd(type="submit") Book Now
+                 
+            td 
+              form(action="deleteRide")
+                  input(type="hidden", name="rideId", value=ride._id) 
+                  button.delRd(type="submit") Remove
+  footer#footer 
+    p &copy; Copyright HTTP5211, 2023. 
+    a(href="https://www.freepik.com/free-vector/save-fuel-pump-icon-petrol-station-sign-gas-station-sign-fuel-background_29886764.htm#query=fuel%20saving&position=48&from_view=keyword&track=ais") Save fuel image by Rochak Shukla on Freepik

@@ -1,0 +1,44 @@
+extends layout 
+
+
+block main-content
+  div.content
+    div.right   
+          img(src='./postRide_long.jpg' alt='logo' style='width:290px; height:580px;')      
+          
+    h1.page-title Post a Ride
+    br
+    form(method="post", action="/postRide/submit")
+        div
+            label(for="rideID") Ride Code:
+            br
+            input(type="number", min="1", id="rdId", name="rideID")
+        div
+            label(for="fromPt") From:
+            br
+            input(type="text", id="fromPt", name="from", placeholder="")
+        div
+            label(for="toPt") To:
+            br
+            input(type="text", id="toPt", name="to", placeholder="")
+        div
+            label(for="driverID") Drvier Code:
+            br
+            input(type="text", id="drvrID", name="drvID", placeholder="")
+        div
+            label(for="userID") No. Of Seats :
+            br
+            input(type="number", min="1", id="usId", name="userID")   
+        div
+            label(for="distance") Distance:
+            br
+            input(type="text", id="dist", name="distance", placeholder="")
+        div
+            label(for="cost") Cost:
+            br
+            input(type="text", id="cost", name="cost", placeholder="") 
+        button(type="submit", value="submitForm") Submit
+  footer#footer 
+    p &copy; Copyright HawkOnWheels, 2023.
+    a(href="https://www.freepik.com/free-vector/travel-lettering_3792855.htm#query=car%20pooling%20quotes&position=36&from_view=search&track=ais") Travel together image courtesy Freepik
+        a(href="https://www.freepik.com/free-vector/car-sharing-concept-illustration_36238793.htm#query=car%20pooling&position=16&from_view=search&track=ais") Car sharing image by storyset on Freepik

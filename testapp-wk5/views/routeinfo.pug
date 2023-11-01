@@ -1,0 +1,26 @@
+extends layout 
+
+
+block main-content 
+  div.content
+    //You can overwrite the main-content block by writing block content
+    //in the template file which is extending.
+ 
+    div.right   
+          img(src='./about_long.jpg' alt='logo' style='width:290px; height:580px;')      
+                 
+    h1.page-title Ride Booked Successfully! Pl find the route Info
+    br 
+    br 
+    a Distance from #{pA} to #{pB} is #{movieList.route.distance} Kms
+    br
+    br
+    a #{pA} to #{pB} Travel duration is #{rideTime} minutes!
+    br
+    br
+    a Latitude of #{pA} is #{movieList.route.boundingBox.ul.lat} North
+    br
+    br
+    a Longitude of #{pA} is #{movieList.route.boundingBox.ul.lng} West
+  footer#footer 
+    p &copy; Copyright HawkOnWheels, 2023.

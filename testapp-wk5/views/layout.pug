@@ -1,0 +1,35 @@
+block variables 
+doctype html 
+html 
+  head
+    meta(charset="utf-8")
+    title #{title} | Hawk On Wheels
+    block scripts 
+      link(rel="stylesheet", type="text/css", href="/styles.css")
+  body
+      header#header 
+        .header-content   
+          h1#site-name 
+          img(src='./how_bar.jpg' alt='login') 
+          h2.navitem
+            a(href="/contact")
+              .clickable-area Contact Us 
+          h2.navitem
+            a(href="/about")
+              .clickable-area About Us
+          h2.navitem
+            a(href="/addDriver")
+              .clickable-area Add Driver
+          h2.navitem
+            a(href="/yourProfile")
+              .clickable-area Your Profile 
+          h2.navitem
+            a(href="/postRide")
+              .clickable-area Post Rides
+          h2.navitem
+            a(href="/searchRide")
+              .clickable-area Search Rides  
+          <br>    
+      
+        block main-content 
+        

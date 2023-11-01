@@ -1,0 +1,8 @@
+extends layout 
+
+block main-content 
+  h1.page-title Popular Movies
+  ul 
+    each movie in movieList 
+      li 
+        a #{movie.title} (#{movie.ids.imdb})

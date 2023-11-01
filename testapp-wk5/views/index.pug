@@ -1,0 +1,14 @@
+extends layout 
+
+
+block main-content 
+  -
+    //You can overwrite the main-content block by writing block content
+    //in the template file which is extending.
+  h1.page-title Hello! Here's a list of recommended movies
+  ul 
+    each movie in movieList 
+      li 
+        a(href=`/ratings/${movie.movie.ids.trakt}`) #{movie.movie.title} (#{movie.movie.year})
+
+  

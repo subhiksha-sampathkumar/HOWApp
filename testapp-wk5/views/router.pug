@@ -1,0 +1,13 @@
+extends layout 
+
+
+block main-content  
+    div.content
+        div.right   
+          img(src='./about_long.jpg' alt='logo' style='width:290px; height:580px;')      
+          
+            p Thank you for entering start and end points! 
+            br
+            a(href='/route') Click here to list route details between#{fp} to #{tp}
+    footer#footer 
+      p &copy; Copyright HawkOnWheels, 2023.

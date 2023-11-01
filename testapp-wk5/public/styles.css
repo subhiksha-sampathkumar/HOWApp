@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family:'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navitem {                                             /* About, Contact */
+  font-weight: normal;
+  padding: 0 0.5rem 0 1rem;
+  float: right;
+  display: inline;
+  margin-top: 35px;
+}
+#site-name {
+  text-align :center;
+}
+a {
+  font-size:large ;
+}
+.mother{
+  text-align: center;;
+}
+
+.content{
+  width:100vw;
+  height: 580px;
+  display:inline-block;
+  background-color: rgba(239, 196, 239, 0.267);
+  background-image: url('dottedBG.jpg');
+  border-width:1px;
+  border-style:solid;
+  border-color:rgb(169, 10, 10);
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.right {
+  width: 19vw;
+  height: 580px;
+  background-color: rgb(222, 201, 241);
+  float:right;
+  border-width:1px;
+  border-style:solid;
+  border-color:rgb(14, 111, 45);
+}
+
+
+#footer {         
+  justify-content: center;           
+  align-items: center;                 
+  padding: 0.5rem;
+  background: rgba(194, 172, 240, 0.4);
+  border-width: 2px;
+  border-style:solid;
+}
+
+#theme {
+  font-size: 30px;
+  color:rgb(45, 9, 121)
+}
+#theme2 {
+  font-size: 40px;
+  color :rgb(66, 8, 147)
+}
+#page-title .page_title {
+  font-size: 30px;
+  color:rgb(15, 198, 21)
+}
+#msg {
+  font-size:large;
+  color:rgb(48, 6, 116)
+}
+#tbl {
+font-size: 20px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #b5ffa9e6;
+  color:#00275d;
+  font-weight: bold;
+  padding: 10px 20px;
+  border:#000000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#tbl {
+  font-size: 20px;
+  border: 1px solid;
+  margin-left:auto;
+  margin-right:auto;
+  }
+  
+  th, td {
+    border: 1px solid;
+  }
+  .bkRd {
+    font-weight: 800;
+    background-color: rgb(179, 231, 128);
+    color: rgb(47, 90, 3);
+  }
+  .delRd {
+    font-weight:800 ;
+    background-color: rgb(243, 155, 155);
+    color: rgb(138, 13, 13);
+  }
